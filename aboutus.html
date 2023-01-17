@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="media/favicon (1).ico" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Development" />
+    <meta name="keywords" content="FRONTENDE, BACKEND" />
+    <meta name="author" content="Thomas Wondwosen" />
+    <meta name="theme-color" content="#673AB6" />
+    <title>About us</title>
+    <link rel="stylesheet" href="styleabout.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img
+            src="image/logo-color.png"
+            alt="this is a logo"
+            width="50px"
+            height="50px"
+            class="nav--logo"
+          /><br />
+          <h1><b>Protofolio</b></h1>
+        </div>
+
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" id="label">Menu</label>
+
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__lists">
+              <a class="menu__lists--link" href="index.html">Home</a>
+            </li>
+            <li class="menu__lists">
+              <a class="menu__lists--link" href="experience.html">Experience</a>
+            </li>
+            <li class="menu__lists">
+              <a class="menu__lists--link" href="Services.html">Service</a>
+            </li>
+            <li class="menu__lists">
+              <a class="menu__lists--link" href="price.html">Pricing</a>
+            </li>
+            <li class="menu__lists">
+              <a class="menu__lists--link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="menu__lists">
+              <a class="menu__lists--link" href="Contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="type">
+        <div>
+          <h1 class="type__head">About Us</h1>
+          <h2 class="type__head2">Home/About</h2>
+        </div>
+      </div>
+    </header>
+    <br />
+    <br />
+    <br />
+
+    <main class="main">
+      <div class="main__row1">
+        <div class="main__pic">
+          <img
+            class="main__pic--img"
+            src="image/developer2.jpg"
+            alt="my picture"
+            id="mypicture"
+          />
+        </div>
+        <div class="main__first-text">
+          <div class="main__first-text--pic">
+            <h1>Thomas Wondwosen</h1>
+
+            <p class="p text__p">
+              I am a seasoned software expert who has developed products for
+              enterprise clients such as Intuit, Yale University, and
+              Hewlett-Packard (HP), as well as many venture-backed businesses.
+            </p>
+
+            <p class="p text__p">
+              I specialize in building applications specific to the business
+              needs of my clients.
+            </p>
+            <p class="p text__p">
+              I have done work in software development, mobile app creation,
+              front-end/back-end web, database/server management, graphic
+              design, and video game development.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__row2">
+        <div class="main__second-text">
+          <div class="main__about_video">
+            <p class="p main__about_video--p">
+              Since 2005, I've enjoyed turning complex problems into simple,
+              beautiful and intuitive designs. When I'm not pushing pixels,
+              you'll find me cooking, gardening or working out in the park.
+            </p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="main__video">
+            <video
+              class="main__video--vid"
+              width="320"
+              height="240"
+              controls
+              id="video"
+            >
+              <source
+                src="video/5ea0c5c0b2-about-me_20221227_001206_freemium - Trim.mp4"
+                type="video/mp4"
+                title="Video ABout Me"
+                height:400px;
+                width:500px;
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <br />
+          <br />
+          <div class="testimony">
+            <h2>here is what people think about me:</h2>
+            <br />
+            <br />
+
+            <audio controls id="audio">
+              <source
+                src="Audio/167210239092039675ulr-voicemaker.in-speech.mp3"
+                type="audio/mp3"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br />
+    <br />
+    <br />
+    <footer class="footer">
+      <div>
+        <p class="p footer__p">
+          <strong class="footer__strong"
+            >We Dont't Say Impossible! <br />
+            We First Ask Why Not?</strong
+          >
+        </p>
+        <p class="p footer__p">If Not Now, When? <br />Let's Work Together!</p>
+      </div>
+      <div class="footer_form">
+        <form id="form">
+          <div class="input-control">
+            <label class="form__label" for="username">Full Name</label>
+            <input
+              type="text"
+              placeholder="Full Name"
+              size="25"
+              id="username"
+              class="form__input"
+            />
+            <div class="error"></div>
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              placeholder="Email Address"
+              size="25 px"
+              id="email"
+              class="form__input"
+            />
+            <div class="error"></div>
+          </div>
+          <br />
+          <br />
+          <div>
+            <label class="form__label" for="message">Your Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="25"
+              rows="7"
+              placeholder="Your message"
+              class="form__textarea"
+            ></textarea>
+            <div class="error"></div>
+          </div>
+          <br />
+          <br />
+          <button class="sendmessage btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
