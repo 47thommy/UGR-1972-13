@@ -10,40 +10,88 @@
     <meta name="keywords" content="FRONTENDE, BACKEND" />
     <meta name="author" content="Thomas Wondwosen" />
     <meta name="theme-color" content="#673AB6" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"
+    ></script>
+    <script defer src="index.js"></script>
     <title>Experience</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <div>
-            <img
-              src="media/logo-color.png"
-              alt="this is a logo"
-              width="100px"
-              height="100px"
-              class="logo"
-            /><br />
-          </div>
-          <div>
-            <h1><b>Protofolio</b></h1>
-          </div>
-          <div>
-            <ul class="navigation1">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="experience.html">Experience</a></li>
-              <li><a href="Services.html">Service</a></li>
-              <li><a href="price.html">Pricing</a></li>
-              <li><a href="aboutus.html">About Us</a></li>
-              <li><a href="Contactus.html">Contact Us</a></li>
-            </ul>
-          </div>
+    <header class="header">
+      <nav
+        class="navbar navbar-expand-lg bg-success d-flex justify-content-around ps-5 pe-5"
+        style="--bs-bg-opacity: 0.8"
+      >
+        <div class="navbar-brand d-flex justify-content-evenly">
+          <img
+            src="image/logo-color.png"
+            alt="this is a logo"
+            width="50px"
+            height="50px"
+            class="img-fluid"
+          /><br />
+          <h1><b>Protofolio</b></h1>
+        </div>
+
+        <!-- <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" id="label">Menu</label> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul
+            class="navbar-nav ms-auto navbar-nav-scroll"
+            style="--bs-scroll-height: 500px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-4"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="Services.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="price.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="Contactus.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </nav>
-      <div>
-        <h1>Experience</h1>
-
-        <h2>Home/Experience</h2>
+      <div class="container-fluid bg-secondary bg-gradient m-0 me-0">
+        <div
+          class="d-flex flex-column justify-content-center"
+          style="height: 70vh"
+        >
+          <h1 class="ms-lg-5">Experience</h1>
+          <br />
+          <h2 class="ms-lg-5">Home/Experience</h2>
+        </div>
       </div>
     </header>
     <br />
@@ -51,70 +99,73 @@
     <br />
     <br />
 
-    <main>
-      <table>
-        <tr>
-          <th colspan="2">Front End</th>
+    <main
+      class="d-flex flex-column align-items-center flex-md-row justify-content-md-evenly g-md-5"
+    >
+      <table class="table table-hover table-bordered m-5 mb-5">
+        <tr class="main_table--row">
+          <th colspan="2" class="text-center">Front End</th>
         </tr>
-        <tr>
-          <td>
+        <tr class="main_table--row">
+          <td class="main_table--td">
             HTML <br />
             Experienced
           </td>
-          <td>
+          <td class="main_table--td">
             JavaScript <br />
             Experienced
           </td>
         </tr>
-        <tr>
-          <td>
+        <tr class="main_table--row">
+          <td class="main_table--td">
             CSS <br />
             Experienced
           </td>
-          <td>React <br />Experienced</td>
+          <td class="main_table--td">React <br />Experienced</td>
         </tr>
-        <tr>
-          <td>
+        <tr class="main_table--row">
+          <td class="main_table--td">
             Bootstrap <br />
             Experienced
           </td>
-          <td>
+          <td class="main_table--td">
             Angular <br />
             Intermediate
           </td>
         </tr>
       </table>
-      <table>
-        <tr>
-          <th colspan="2">Backend</th>
+
+      <table class="table table-hover table-bordered m-5 mb-5">
+        <tr class="main_table--row">
+          <th colspan="2" class="text-center">Backend</th>
         </tr>
-        <tr>
-          <td>
+        <tr class="main_table--row">
+          <td class="main_table--td">
             PHP <br />
             Experienced
           </td>
-          <td>
+          <td class="main_table--td">
             FLask <br />
             Experienced
           </td>
         </tr>
 
-        <tr>
-          <td>
+        <tr class="main_table--row">
+          <td class="main_table--td">
             Node Js <br />
             Experienced
           </td>
-          <td>
+          <td class="main_table--td">
             Net <br />
             Intermediate
           </td>
         </tr>
-        <tr>
-          <td>
+        <tr class="main_table--row">
+          <td class="main_table--td">
             SQL <br />
             Experienced
           </td>
-          <td>
+          <td class="main_table--td">
             Django <br />
             Intermediate
           </td>
@@ -124,43 +175,69 @@
     <br />
     <br />
     <br />
-    <footer>
-      <div>
-        <p>
-          <strong
+    <footer
+      class="d-flex justify-content-center justify-content-md-evenly align-items-center align-items-md-center flex-md-row flex-column bg-secondary bg-gradient"
+    >
+      <div class="mb-5">
+        <p class="fs-1 text-center">
+          <strong class="footer__strong"
             >We Dont't Say Impossible! <br />
             We First Ask Why Not?</strong
           >
         </p>
-        <p>If Not Now, When? <br />Let's Work Together!</p>
+        <p class="fw-normal fs-5 text-center">
+          If Not Now, When? <br />Let's Work Together!
+        </p>
       </div>
-      <form>
-        <label for="fullname">Full Name</label>
-        <input type="text" placeholder="Full Name" size="25" id="fullname" />
-        <br />
-        <br />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          placeholder="Email Address"
-          size="25 px"
-          id="email"
-        />
-        <br />
-        <br />
-        <label for="message">Your Message</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="25"
-          rows="7"
-          placeholder="Your message"
-        ></textarea>
-        <br />
-        <br />
-        <button type="button">Send Message</button>
-      </form>
-      <br /><br />
+      <div class="">
+        <form id="form" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label class="form__label fs-5 fw-semibold" for="username"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              placeholder="Full Name"
+              size="25"
+              id="username"
+              class="form-control"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fs-5 fw-semibold">Email</label>
+            <input
+              type="email"
+              placeholder="Email Address"
+              size="25 px"
+              id="email"
+              class="form-control"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div>
+            <label class="form__label fs-5 fw-semibold" for="message"
+              >Your Message</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              cols="25"
+              rows="7"
+              placeholder="Your message"
+              class="form-control"
+              required
+            ></textarea>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <br />
+          <br />
+          <button class="btn btn-success" type="submit">Send Message</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
